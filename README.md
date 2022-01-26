@@ -16,7 +16,7 @@ Version Control is used to track and control changes to source code. It is an es
 
 We have many resources online available to know the importance of version control. 
 
-#### Creating a repository
+#### Git
 
 Git commands to get familiar with   
     
@@ -34,20 +34,27 @@ _____
 ___
 
     git commit -m "<message you want to add to retrack the commits>"
-    
-    ## Replace master in the below message based on the branch you are working with
-    git push origin master 
+
+Create a new commit containing the current contents of the index and the given log message describing the changes.   
+___
+
+    git push origin main 
+Updates remote refs using local refs, while sending objects necessary to complete the given refs.
 
     ## Creating new branch
     git checkout -b <new branch name>
 
+Creating new branches in git
+
     ## switching to existing branch
     git checkout <branch name>
 
+Switching to existing branches
+
     ## get all the branches from the git online repo
     git fetch --all
-    
 
+Fetch branches and/or tags (collectively, "refs") from one or more other repositories, along with the objects necessary to complete their histories. Remote-tracking branches are updated
 
 ###  Why is Version Control necessary?
 > Backing up Code   

@@ -39,17 +39,18 @@ Create a new commit containing the current contents of the index and the given l
 ___
 
     git push origin main 
-Updates remote refs using local refs, while sending objects necessary to complete the given refs.
-
-    ## Creating new branch
+Updates remote refs using local refs, while sending objects necessary to complete the given refs.   
+___  
+    ## Creating new branch   
     git checkout -b <new branch name>
 
-Creating new branches in git
+Creating new branches in git  
+___
 
     ## switching to existing branch
     git checkout <branch name>
-
 Switching to existing branches
+___
 
     ## get all the branches from the git online repo
     git fetch --all
@@ -57,11 +58,27 @@ Switching to existing branches
 Fetch branches and/or tags (collectively, "refs") from one or more other repositories, along with the objects necessary to complete their histories. Remote-tracking branches are updated
 
 ###  Why is Version Control necessary?
-> Backing up Code   
-> Sharing and reusing code  
-> Reverting Code    
+> Backing up Code       
+    
+    git log
+To view list of all commits
+
+    git log --stat
+To view details in logs
+    
+    git log --pretty=oneline
+View all logs in one line
+
+    git log --pretty=format:"%h %s" --graph
+
+> Sharing   
+> Reverting Code   
+
+User can trace back to any commits made in the past
+
 > Collaboration
 
-
+### Why regular version control is not enough for ML?
+![alt text](images/PROGRAMMINGvsML.png "Title")
 
 

@@ -81,4 +81,27 @@ User can trace back to any commits made in the past
 ### Why regular version control is not enough for ML?
 ![alt text](images/PROGRAMMINGvsML.png "Title")
 
+## 2. Data Version Control(DVC)
 
+In order to have reproducibility, consistent version tracking is essential. In the traditional software world, versioning code is enough because all behavior is defined by it. 
+
+In ML, we also need to track model versions, along with the data used to train it, and some meta-information like training hyperparameters. 
+
+We can track models and metadata in a standard version control system like Git, but data is often too large and mutable for that to be efficient and practical. It's also important to avoid tying the model lifecycle to the code lifecycle since model training often happens on a different schedule. The common reasons when ML model and data changes are:
+
+> The model can be retrained based upon new training data   
+Models may be retrained based on new training approaches   
+Models may be self-learning     
+Models may be deployed in a new application     
+Models may be subject to attack and require revision    
+Models might be rolled back to a previous serving version       
+Companies/Government compliance may require audit or investigation on both ML model and data, hence we need access to all versions of the productionized ML model.      
+Data may be able to reside in a restricted jurisdiction     
+Data storage may not be immutable         
+
+    Data Version Control, or DVC, is a data and ML experiment management tool that takes advantage of the existing engineering toolset that you're already familiar with (Git, CI/CD, etc.).
+### Model Validation
+
+Standard DevOps practice is test automation, usually in the form of unit tests and integration tests. Passing these tests is a prerequisite to deploying a new version. Having a comprehensive automated test can give a team great confidence, dramatically accelerate the pace of production deployments.
+
+ML models are harder to test because no model gives 100% correct results. This means model validation tests need to be necessarily statistical in nature, rather than having a binary pass/fail status. In order to decide whether a model is good enough for deployment, one needs to decide on the right metrics to track the threshold of their acceptable values, usually empirically, and often by comparison with previous models or benchmarks.  

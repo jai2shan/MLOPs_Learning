@@ -99,9 +99,25 @@ Companies/Government compliance may require audit or investigation on both ML mo
 Data may be able to reside in a restricted jurisdiction     
 Data storage may not be immutable         
 
-    Data Version Control, or DVC, is a data and ML experiment management tool that takes advantage of the existing engineering toolset that you're already familiar with (Git, CI/CD, etc.).
 ### Model Validation
 
 Standard DevOps practice is test automation, usually in the form of unit tests and integration tests. Passing these tests is a prerequisite to deploying a new version. Having a comprehensive automated test can give a team great confidence, dramatically accelerate the pace of production deployments.
 
-ML models are harder to test because no model gives 100% correct results. This means model validation tests need to be necessarily statistical in nature, rather than having a binary pass/fail status. In order to decide whether a model is good enough for deployment, one needs to decide on the right metrics to track the threshold of their acceptable values, usually empirically, and often by comparison with previous models or benchmarks.  
+ML models are harder to test because no model gives 100% correct results. This means model validation tests need to be necessarily statistical in nature, rather than having a binary pass/fail status. In order to decide whether a model is good enough for deployment, one needs to decide on the right metrics to track the threshold of their acceptable values, usually empirically, and often by comparison with previous models or benchmarks. 
+
+
+    Data Version Control, or DVC, is a data and ML experiment management tool that takes advantage of the existing engineering toolset that you're already familiar with (Git, CI/CD, etc.).
+
+    DVC can be used as a Python library, simply install it with a package manager like pip or conda. Depending on the type of remote storage you plan to use, you might need to install optional dependencies: s3, azure, gdrive, gs, oss, ssh, etc.
+
+
+[Please use this link to configure DVC](https://dvc.org/doc/install)
+
+DVC's features can be grouped into functional components:
+
+> Data and model versioning   
+Data and model access       
+Data pipelines      
+Metrics, parameters and plots       
+Experiments     
+

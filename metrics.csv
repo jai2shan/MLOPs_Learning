@@ -1,0 +1,4 @@
+,Train,Test
+Accuracy,"tensor(0.9040, device='cuda:0', dtype=torch.float64)","tensor(0.9150, device='cuda:0', dtype=torch.float64)"
+Class Cats,"tensor(0.8980, device='cuda:0', dtype=torch.float64)","tensor(0.9480, device='cuda:0', dtype=torch.float64)"
+Class Dogs,"tensor(0.9100, device='cuda:0', dtype=torch.float64)","tensor(0.8820, device='cuda:0', dtype=torch.float64)"

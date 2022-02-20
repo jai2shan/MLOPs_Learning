@@ -38,7 +38,6 @@ def test_case_DogAccuracy():
 
 
 FileExists = ['data.zip','model.pt']
-
 @pytest.mark.parametrize("fileName",FileExists)
 def test_FileExists(fileName):
     print(fileName)

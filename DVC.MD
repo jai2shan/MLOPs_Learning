@@ -104,7 +104,7 @@ mlflow, kubeflow, neptune, pachyderm etc.,
 10) Train a Random Forest model on Version 1 data
 11) Visualize everything in DVC studio
 
-## Conclusion
+## DVC for a Machine Learning Engineer
 We saw capabilities of DVC only with respect to usage in Machine Learning. There are more features of DVC which can be used to establish ML pipelines and use the same with CI/CD pipelines to automate the deployment process.
 
 ## References

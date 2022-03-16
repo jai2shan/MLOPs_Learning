@@ -111,5 +111,6 @@ We saw capabilities of DVC only with respect to usage in Machine Learning. There
 
 1) dvc.org
 2) https://www.youtube.com/watch?v=kLKBcPonMYw&list=PL7WG7YrwYcnDb0qdPl9-KEStsL-3oaEjg
-3) https://builtin.com/machine-learning/mlops
-4) https://towardsdatascience.com/why-git-and-git-lfs-is-not-enough-to-solve-the-machine-learning-reproducibility-crisis-f733b49e96e8
+3) theschoolof.ai/ - EMLOP Course
+4) https://builtin.com/machine-learning/mlops
+5) https://towardsdatascience.com/why-git-and-git-lfs-is-not-enough-to-solve-the-machine-learning-reproducibility-crisis-f733b49e96e8

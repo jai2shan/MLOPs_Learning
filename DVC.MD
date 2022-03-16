@@ -1,5 +1,14 @@
 ## <center>  2. Data Version Control(DVC) 
 
+## What is Version Control ?
+     
+Version Control is used to track and control changes to source code. It is an essential tool to ensure the integrity of the codebase. Version control facilitates a continuous, simple way to develop software.
+
+We have many resources online available to know the importance of version control. 
+
+## Why regular version control is not enough for ML?
+![alt text](images/PROGRAMMINGvsML.png "Title")
+
 ## What are the challenges in using traditional git for ML projects?
 
 ![alt text](images/Git_Image.png "Title")
@@ -16,10 +25,10 @@ Challenges :
 1) Git do not deal well with large data files
 2) Source control management systems designed to generate delta’s for text files do not deal well with changes to large binary files
 3) Changes won’t always be recorded and team members might forget what was done
-4) Managing multiple versions of datasets and models can be messy
+4) Managing multiple versions of datasets and models can be messy  
 
 ## Why not Git-LFS (Git Large File Storage)?
-Git LFS lets you store files up to 2 GB in size. That is a Github limitation rather than Git-LFS limitation, however all Git-LFS implementations seem to come with various limitations.Gitlab and Atlassian both have their own lists of Git-LFS limitations. In most of the cases our data size can be more than 2GB. Therefore Git-LFS on Github is probably unsuitable for machine learning.
+Git LFS lets you store files up to 2 GB in size. That is a Github limitation rather than Git-LFS limitation, however all Git-LFS implementations seem to come with various limitations.Gitlab and Atlassian both have their own lists of Git-LFS limitations. In most of the realtime cases our data size can be more than 2GB. Therefore Git-LFS on Github is probably unsuitable for machine learning.
 
 ## Data and Model Versioning using DVC
 
@@ -77,3 +86,26 @@ Data pipelines
 Metrics, parameters and plots       
 Tracking Experiments     
 
+## Similar tools in the market
+
+mlflow, kubeflow, neptune, pachyderm etc.,
+
+## Demo
+### *Every step below is followed with a commit*
+1) We will setup git and dvc to track code, data and models 
+2) Setup cloud location for data to store the data
+3) Add Version 1 data with 500 training records(Titanic dataset)
+4) Add python code to build models
+5) Train a Logistic Regression model on Version 1 data
+6) Add Version 2 of the data with 800 training records
+7) Train a Logistic Regression model on Version 2 data
+8) Train a Random Forest model on Version 2 data
+9) Switch to Version 1 of data
+10) Train a Random Forest model on Version 1 data
+11) Visualize everything in DVC studio
+
+## References
+
+1) dvc.org
+2) https://builtin.com/machine-learning/mlops
+3) https://towardsdatascience.com/why-git-and-git-lfs-is-not-enough-to-solve-the-machine-learning-reproducibility-crisis-f733b49e96e8
